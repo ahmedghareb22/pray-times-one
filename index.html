@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- axios -->
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="box">
+                <div class="head">
+                    <div class="city">
+                        <h3>المدينة :</h3>
+                            <select id="mySelect">
+                                <option value="Cairo" onclick="getPrayTime('Cairo')">القاهرة</option>
+                                <option value="Alexandria" onclick="getPrayTime('Alexandria')">الاسكندرية</option>
+                                <option value="Marsa Matruh" onclick="getPrayTime('Marsa Matruh')" >مطروح</option>
+                                <option value="Sharqia" onclick="getPrayTime('Sharqia')" >الشرقية</option>
+                                <option value="Kafr el-Sheikh" onclick="getPrayTime('Kafr el-Sheikh')" >كفر الشيخ</option>
+                            </select>
+                            
+                        </div>
+                    <div class="date">
+                        <h3>التاريخ :</h3>
+                        <p id="today-date">03-09-2024</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="body">
+                    <div class="pray fajr">
+                        <div class="pray-name">الفجر :</div>
+                        <div class="pray-time" id="fajr">00:00</div>
+                    </div>
+                    <div class="pray shrouk">
+                        <div class="pray-name">الشروق :</div>
+                        <div class="pray-time" id="Sunrise">00:00</div>
+                    </div>
+                    <div class="pray dohr">
+                        <div class="pray-name">الظهر :</div>
+                        <div class="pray-time" id="Dhuhr">00:00</div>
+                    </div>
+                    <div class="pray asr">
+                        <div class="pray-name">العصر :</div>
+                        <div class="pray-time" id="Asr">00:00</div>
+                    </div>
+                    <div class="pray maghreb">
+                        <div class="pray-name">المغرب :</div>
+                        <div class="pray-time" id="Maghrib">00:00</div>
+                    </div>
+                    <div class="pray ishaa">
+                        <div class="pray-name">العشاء :</div>
+                        <div class="pray-time" id="Isha">00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/select.js"></script> -->
+</body>
+</html>
