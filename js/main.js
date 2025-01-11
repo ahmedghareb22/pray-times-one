@@ -7,7 +7,6 @@ let ishaField = document.getElementById("Isha");
 
 
 function getPrayTime(city) {
-    console.log("khawal")
     axios.get(
         `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=Egypt`
     ).then((response) => {
